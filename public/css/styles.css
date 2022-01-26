@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background: #e6e9ff;
+	margin: 20px;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+
+
+.content{
+  margin: auto;
+  padding: 64px;
+}
+
+input {
+  background: #e6e9ff;
+  padding: 16px;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid grey;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.submitBut , .submitButt{
+  padding: 16px;
+  border-radius: 8px;
+  color : white;
+  background-color: #667aff;
+  font-weight: bold;
+  border : 0;
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.submitBut:hover , .submitButt:hover{
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+
+
+.submitBut:focus , .submitBut:active , .submitButt:focus , .submitButt:active{
+  border : 0;
+  outline: 0;
+}
+
+.playerInfo{
+  position: absolute;
+}
+
+
+.playerInfo.left{
+  left : 30px;
+}
+.playerInfo.top{
+  top: 10px;
+  left : 45%;
+}
+
+.playerInfo.right {
+  right: 30px;
+}
+
+
+.container .message{
+  text-align: center;
+  padding: 32px;
+  min-height: 200px;
+
+}
+
+.bluff{
+	text-align: center;
+}
+
+.cards {
+  width: 80%;
+  margin: auto;
+}
+.cards img{
+  width: 100px;
+  cursor: pointer;
+}
+
+.cards img.selected{
+  border : 2px solid black;
+  border-radius: 8px;
+}
+
+
+.buttons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropdown {
+	display: flex;
+	justify-content: center;
+}

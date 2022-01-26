@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bluff</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+
+    <div class="playerInfo left">
+      <h2 id="leftName">Player Name</h2>
+      <p>Cards Remaing : 13</p>
+    </div>
+
+    <div class="playerInfo top">
+      <h2 id="topName">Player Name</h2>
+      <p>Cards Remaing : 13</p>
+    </div>
+    <div class="playerInfo right">
+      <h2 id="rightName">Player Name</h2>
+      <p>Cards Remaing : 13</p>
+    </div>
+
+    <div class="container">
+      <div class="message">
+        <h2 id="message">waiting For host to start the game!</h2>
+        <h4 id="cot">Cards on Table : 0</h4>
+      </div>
+    </div>
+
+    <div class="bluff" id="bluff">
+
+    </div>
+
+    <div class="cards" id="cards">
+
+
+      </div>
+
+      <div class="dropdown" id="card">
+        <h4>Choose the Card You want to Play :</h4>
+        <select name="card" >
+          <option value="ace" selected>Ace</option>
+          <option value="two">Two</option>
+          <option value="three">Three</option>
+          <option value="four">Four</option>
+          <option value="five">Five</option>
+          <option value="six">Six</option>
+          <option value="seven">Seven</option>
+          <option value="eight">Eight</option>
+          <option value="nine">Nine</option>
+          <option value="ten">Ten</option>
+          <option value="jack">Jack</option>
+          <option value="queen">Queen</option>
+          <option value="king">King</option>
+        </select>
+      </div>
+
+    <div class="buttons">
+      <button type="button" class="submitBut" onclick="pass()">Pass</button>
+      <button type="button" class="submitBut" onclick="play()">Play</button>
+      <button type="button" class="submitBut" onclick="bluff()">Call Bluff</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>
